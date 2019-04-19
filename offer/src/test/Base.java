@@ -2,7 +2,7 @@ package test;
 
 public class Base
 {
-    private String baseName = "base";
+     String baseName = "base";
     public Base()
     {
         callName();
@@ -15,7 +15,7 @@ public class Base
 
     static class Sub extends Base
     {
-        private String baseName = "sub";
+        //private String baseName = "sub";
 
         public Sub(String baseName) {
             this.baseName = baseName;
