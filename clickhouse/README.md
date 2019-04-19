@@ -45,7 +45,19 @@ clickhouse
     
 1. UUID
 
-
+    通用惟一标识符(UUID)是一个16字节的数字，用于标识记录。有关UUID的详细信息，请参见[Wikipedia](https://en.wikipedia.org/wiki/Universally_unique_identifier)
+    
+    UUID例子：`61f0c404-5cb3-11e7-907b-a6006ad3dba0`
+    
+    插入第一条数据：`00000000-0000-0000-0000-000000000000`
+    
+    *这两个例子我翻译的好像有问题，欢迎指出*
+    
+    UUID的生成规则，clickhouse提供了[generateUUIDv4](https://clickhouse.yandex/docs/en/query_language/functions/uuid_functions/)函数
+    
+    UUID只支持Stirng类型支持的函数，例如min,max,count，不支持算术操作，例如sum,avg
+    
+1. 
 # 4. sql操作
 ##  1. create
 ##  2. insert
