@@ -69,9 +69,89 @@ clickhouse
 
     日期和时间，4个字节，存放时间从1970-01-01开始
     
-    表现形式： `0000-00-00 00:00:00`
+    表现形式： `0000-00-00 00:00:00`，精度为秒
     
-    精度为秒
+    有时区
+    
+    在生成dataTime的时候，默认按设备当时在的时区分配，当dataTime存储的时候，时区特征以已消失不见，我们也可以自定义时区，通过启用客户机命令行选项`——use_client_time_zone`来更改此行为
+    
+1. Enum8,Enum16
+    
+    包括Enum8和Enum16两种类型，存储着'String' = Integer的有限键值对集。在clickhouse中，操作的时候，把所有的value都看作Integer来操作，尽管有时候是Stirng类型，官方说这样更高效
+    
+    * Enum8 ==> 'String' = Int8
+    * Enum16 => 'String' = Int16
+    
+    (补上操作图)
+    
+    一般规则及用法（太长了，还没看）
+
+1. Array(T)
+
+    T类型数据的数组
+    
+    当创建一个动态数组时，clickhouse自动将数组参数类型定义为它所存储元素的最窄类型（就是如果同时有int和float,取float），如果有任何null和Nullable类型的参数，数组类型就为Nullable
+    
+    如果clickhouse不能决定是哪一种类型，就会报异常，例如 `select Array(1,'a')`
+    
+1. AggregateFunction(name,types_of_arguments...)
+   
+   （这个太高级，我看不懂，后面补充）
+    
+1. Tuple(T1,T2,...)
+
+    元素的元组，每个元素都有一个单独的类型。
+不能将元组存储在表中(内存表除外)。它们用于临时列分组。当在查询中使用IN表达式以及指定lambda函数的某些形式参数时，可以对列进行分组。有关更多信息，请参见操作符和高阶函数部分。
+元组可以是查询的结果。在本例中，对于JSON之外的文本格式，值在括号中以逗号分隔。在JSON格式中，元组作为数组输出(在方括号中)。
+
+    感觉这个和Array(T)比较像，不同之处在于可以存储不同类型的数据
+    
+1. Nullable(TypeName)
+
+    允许使用null来标记没有值，例如一个`Nullable(Int8)`类型的列可以用来存储int8的数据，也可以存储NULL
+    
+    Nullable不可以用于索引
+    
+    Null是Nullable类型的默认值，可以通过修改clickhouse的配置进行修改
+    
+    官方不推荐使用Nullable
+    
+1. Nested(Name1 Type1,Name2 Type2,...)
+
+    嵌套数据结构类型
+    
+    ```
+    CREATE TABLE test.visits
+    (
+        CounterID UInt32,
+        StartDate Date,
+        Sign Int8,
+        IsNew UInt8,
+        VisitID UInt64,
+        UserID UInt64,
+        ...
+        Goals Nested
+        (
+            ID UInt32,
+            Serial UInt32,
+            EventTime DateTime,
+            Price Int64,
+            OrderID String,
+            CurrencyID UInt32
+        ),
+        ...
+        ) ENGINE = CollapsingMergeTree(StartDate, intHash32(UserID), (CounterID, StartDate, intHash32(UserID), VisitID), 8192, Sign)
+    ```
+    
+    （进一步解释以后补充）
+    
+1. Special Data Types
+   
+    * Expression：用于表示高阶函数的lambda表达式
+    
+    * Set: 用于表达式的左边部分
+    
+    * Nothing: （不太明白，后面补充）
 # 4. sql操作
 ##  1. create
 ##  2. insert
