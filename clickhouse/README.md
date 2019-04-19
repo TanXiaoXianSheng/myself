@@ -6,7 +6,7 @@ clickhouse
 # 3. 支持字段
 1. 整数
 
-带或不带符号的指定长度整数
+    带或不带符号的指定长度整数
 
     *有符号*
 * Int8 - [-128 : 127]
@@ -34,6 +34,18 @@ clickhouse
 1. String
 
     String 的长度不受限制，可以为任意长度，它的值也可以为任意值，包括空值。这里用String替代了其它 DBMS 中的 varchar,blob,clob和其它的字符串类型
+    
+    clickhouse 没有指定的编码格式，你存入什么编码，取出就是什么编码。如果存入文本，clickhouse建议用utf-8。（后面还有一些，没看懂）
+
+1. FixedString
+
+    固定 N 个字节的String，N是自然数
+    
+    `<column_name> FixedString(N)`
+    
+1. UUID
+
+
 # 4. sql操作
 ##  1. create
 ##  2. insert
