@@ -3,7 +3,7 @@ clickhouse
 
 # 整体介绍
 # 安装
-    [install](安装)
+[安装](www.baidu.com)
 # hive,es比较
 # 支持字段
 1. 整数
