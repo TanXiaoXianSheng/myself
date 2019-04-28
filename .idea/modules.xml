@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/myself.iml" filepath="$PROJECT_DIR$/myself.iml" />
       <module fileurl="file://$PROJECT_DIR$/offer/offer.iml" filepath="$PROJECT_DIR$/offer/offer.iml" />
       <module fileurl="file://$PROJECT_DIR$/pattern/pattern.iml" filepath="$PROJECT_DIR$/pattern/pattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiro/shiro.iml" filepath="$PROJECT_DIR$/shiro/shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring.iml" filepath="$PROJECT_DIR$/spring/spring.iml" />
     </modules>
   </component>

@@ -10,6 +10,7 @@
         <module name="bootstrap" />
         <module name="es" />
         <module name="mybatis" />
+        <module name="shiro" />
         <module name="spring" />
       </profile>
     </annotationProcessing>
