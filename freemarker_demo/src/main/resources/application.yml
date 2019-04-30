@@ -1,0 +1,8 @@
+
+spring:
+  freemarker:
+    charset: utf-8
+    check-template-location: true
+    template-loader-path: classpath:/templates
+server:
+  port: 8082

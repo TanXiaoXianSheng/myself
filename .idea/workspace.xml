@@ -2,40 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2af2daf4-3224-4f29-9493-35b998802aa6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_0_2_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bootstrap/src/main/resources/twts_173_carbon.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/java/cn/bcf/shiro/entity/Permission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/java/cn/bcf/shiro/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/java/cn/bcf/shiro/entity/RolePermssion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/java/cn/bcf/shiro/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/java/cn/bcf/shiro/entity/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/java/cn/bcf/shiro/login/Base.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/java/cn/bcf/shiro/login/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/java/cn/bcf/shiro/permission/BitAndWildPermissionResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/java/cn/bcf/shiro/permission/BitPermission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/java/cn/bcf/shiro/permission/MyRolePermissionResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/java/cn/bcf/shiro/realm/MyRealm01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/java/cn/bcf/shiro/realm/Realm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/java/cn/bcf/shiro/service/PermissionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/java/cn/bcf/shiro/service/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/java/cn/bcf/shiro/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/java/cn/bcf/shiro/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/resources/shiro-authorizer.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/resources/shiro-jdbc-realm.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/resources/shiro-jdbc-realm02.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/resources/shiro-realm.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/main/resources/shiro.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro/src/test/java/cn/bcf/shiro/login/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -116,8 +82,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shiro/src/main/java/cn/bcf/shiro/service/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            <state relative-caret-position="144">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -306,7 +272,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="922" />
     <option name="width" value="998" />
     <option name="height" value="1029" />
@@ -527,7 +493,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556447952893" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556534576690" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../proxyee-down" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -740,7 +706,7 @@
       <workItem from="1555294535679" duration="17509000" />
       <workItem from="1555468568410" duration="2916000" />
       <workItem from="1556013026243" duration="2963000" />
-      <workItem from="1556073940880" duration="34076000" />
+      <workItem from="1556073940880" duration="36723000" />
     </task>
     <servers />
   </component>
@@ -777,11 +743,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158168000" />
+    <option name="totallyTimeSpent" value="160815000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="615" y="0" width="665" height="686" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -791,7 +756,7 @@
       <window_info id="Designer" order="5" />
       <window_info content_ui="combo" x="748" y="139" width="398" height="432" id="Project" order="6" sideWeight="0.08289242" side_tool="true" weight="0.9507389" />
       <window_info id="Structure" order="7" sideWeight="0.9171076" side_tool="true" weight="0.19612591" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.2557319" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.34215167" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.32804233" />
@@ -1474,8 +1439,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shiro/src/main/java/cn/bcf/shiro/service/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        <state relative-caret-position="144">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
