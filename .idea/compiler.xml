@@ -9,6 +9,7 @@
         <module name="bootstap" />
         <module name="bootstrap" />
         <module name="es" />
+        <module name="executor" />
         <module name="mybatis" />
         <module name="shiro" />
         <module name="spring" />
@@ -17,12 +18,13 @@
     <bytecodeTargetLevel>
       <module name="aysnc-mysql" target="1.8" />
       <module name="bootstap" target="1.8" />
-      <module name="bootstrap" target="1.8" />
+      <module name="bootstrap" target="1.5" />
       <module name="es" target="1.8" />
+      <module name="executor" target="1.8" />
       <module name="frame" target="1.8" />
       <module name="mybatis" target="1.8" />
       <module name="myself" target="1.8" />
-      <module name="shiro" target="1.8" />
+      <module name="shiro" target="1.5" />
       <module name="shiro02" target="1.8" />
       <module name="spring" target="1.8" />
     </bytecodeTargetLevel>
@@ -33,6 +35,7 @@
       <module name="bootstap" options="-parameters" />
       <module name="bootstrap" options="-parameters" />
       <module name="es" options="-parameters" />
+      <module name="executor" options="-parameters" />
       <module name="frame" options="-parameters" />
       <module name="mybatis" options="-parameters" />
       <module name="myself" options="-parameters" />

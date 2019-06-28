@@ -6,6 +6,8 @@
     <modules>
         <module>spring</module>
         <module>mybatis</module>
+        <module>executor</module>
+        <module>java</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
