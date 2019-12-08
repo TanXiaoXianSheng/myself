@@ -22,9 +22,30 @@ public class _01_SimpleInsertSort {
         }
     }
 
+    public static void sort02(int[] a){
+        for (int i = 1;i < a.length;i ++){
+            int value = a[i];
+            for (int j = i - 1;j >= 0;j --){
+                if (value < a[j]){
+                    a[j + 1] = a[j];
+                } else {
+                    a[j + 1] = value;
+                    break;
+                }
+            }
+        }
+    }
+
+
     public static void main(String[] args){
         int a[] = {2,6,1,3,9,8,10,11,6,4,2};
+
+        _01_SimpleInsertSort.sort02(a);
+        System.out.println(Arrays.toString(a));
+
         _01_SimpleInsertSort.sort(a);
         System.out.println(Arrays.toString(a));
+
+
     }
 }

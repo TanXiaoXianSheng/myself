@@ -82,5 +82,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.1.4.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:5.1.4.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.6.2" level="project" />
+    <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.12.5" level="project" />
   </component>
 </module>

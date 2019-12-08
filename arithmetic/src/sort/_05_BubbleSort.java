@@ -27,8 +27,28 @@ public class _05_BubbleSort {
         }
     }
 
+    public static void sort02(int[] a){
+        boolean flag = false;
+        int index = a.length - 1;
+        while (!flag){
+            int n = index;
+            flag = true;
+            for (int i = 0;i < n;i ++){
+                if (a[i] > a[i + 1]){
+                    SortUtil.swap(a,i,i + 1);
+                    index = i;
+                    flag = false;
+                }
+            }
+        }
+    }
+
     public static void main(String[] args){
         int a[] = {2,6,1,7,9,8,10,11,6,4,2};
+
+        _05_BubbleSort.sort02(a);
+        System.out.println(Arrays.toString(a));
+
         _05_BubbleSort.sort(a);
         System.out.println(Arrays.toString(a));
     }

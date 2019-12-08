@@ -6,4 +6,4 @@
     子模版的 body
 </@override>
 <!--继承的模板要写在最下面-->
-<@extends name="/base.ftl"/>
+<@extends name="../base.ftl"/>
