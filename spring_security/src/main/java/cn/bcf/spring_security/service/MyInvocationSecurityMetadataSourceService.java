@@ -7,14 +7,13 @@ import org.springframework.security.access.ConfigAttribute;
 import org.springframework.security.access.SecurityConfig;
 import org.springframework.security.web.FilterInvocation;
 import org.springframework.security.web.access.intercept.FilterInvocationSecurityMetadataSource;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 /**
+ * 请求--权限对应关系
  * @Auther BiChengfei
  * @Date: 2019/12/6 10:27
  */
@@ -31,7 +30,12 @@ public class MyInvocationSecurityMetadataSourceService implements FilterInvocati
             loadResourceDefine();
         }
         HttpServletRequest request = ((FilterInvocation)object).getHttpRequest();
-        for ()
+        for (Iterator<String> it = map.keySet().iterator(); it.hasNext(); ){
+            String url = it.next();
+            if (new AntPathRequestMatcher(url).matches(request)){
+                return map.get(url);
+            }
+        }
         return null;
     }
 
@@ -42,7 +46,7 @@ public class MyInvocationSecurityMetadataSourceService implements FilterInvocati
 
     @Override
     public boolean supports(Class<?> clazz) {
-        return false;
+        return true;
     }
 
     public void loadResourceDefine(){
