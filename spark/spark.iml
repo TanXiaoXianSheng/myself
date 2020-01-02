@@ -75,8 +75,6 @@
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-api:2.6.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-core:2.6.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-yarn-common:2.6.5" level="project" />
-    <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.3.1" level="project" />
-    <orderEntry type="library" name="Maven: javax.activation:javax.activation-api:1.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-jaxrs:1.9.13" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-xc:1.9.13" level="project" />
     <orderEntry type="library" name="Maven: org.apache.hadoop:hadoop-mapreduce-client-jobclient:2.6.5" level="project" />
@@ -219,6 +217,8 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.1.4.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:5.1.4.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.6.2" level="project" />
+    <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.3.1" level="project" />
+    <orderEntry type="library" name="Maven: javax.activation:javax.activation-api:1.2.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: mysql:mysql-connector-java:8.0.13" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.12.5" level="project" />
   </component>
