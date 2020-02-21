@@ -12,3 +12,9 @@
 **[桥接模式](./bridged.md)**  
 **[NAT模式](./NAT.md)**  
 **[本地yum源](./localYum.md)**
+
+### 2. [jdk安装](./jdk.md)
+
+### 3. [主机名修改](./hostname.md)
+
+### 4. [免密登录]()
