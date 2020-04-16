@@ -6,7 +6,7 @@
 `systemctl start firewalld`
 
 ### 关闭防火墙
-`systemctl start firewalld`
+`systemctl stop firewalld`
 
 ### 禁用防火墙
 `systemctl disable firewalld.service`
