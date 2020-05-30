@@ -7,5 +7,6 @@
 
 ### [JVM + Java](./jvm/index.md)
 
+### [datax](./datax/index.md)
 ## 工作
 ### [15F](./15楼工作环境/index.md)

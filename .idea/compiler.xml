@@ -6,19 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="bootstap" />
-        <module name="bootstrap" />
-        <module name="druid" />
         <module name="es" />
-        <module name="executor" />
         <module name="java" />
         <module name="mybatis" />
-        <module name="scala" />
-        <module name="shiro" />
-        <module name="spark" />
-        <module name="spring" />
-        <module name="spring_security" />
         <module name="websocket" />
+        <module name="shiro" />
+        <module name="bootstap" />
+        <module name="scala" />
+        <module name="spring_security" />
+        <module name="spark" />
+        <module name="executor" />
+        <module name="spring" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -14,6 +14,7 @@
 
 #### 网卡配置文件
 **这里配置了DHCP和static**  
+` cd /etc/sysconfig/network-scripts `
 1. dhcp    
 ![NAT-网卡配置文件-dhcp](./image/NAT-网卡配置文件-dhcp.jpg)  
 

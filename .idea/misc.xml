@@ -8,7 +8,6 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/es/pom.xml" />
-        <option value="$PROJECT_DIR$/bootstrap/pom.xml" />
         <option value="$PROJECT_DIR$/shiro/pom.xml" />
         <option value="$PROJECT_DIR$/scala/pom.xml" />
         <option value="$PROJECT_DIR$/websocket/pom.xml" />
@@ -17,6 +16,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/druid/pom.xml" />
         <option value="$PROJECT_DIR$/java/pom.xml" />
         <option value="$PROJECT_DIR$/websocket/pom.xml" />
       </set>
