@@ -23,7 +23,7 @@ public class _04_HeapSort {
     public static void adjust(int[] a,int i,int length){
         int temp = a[i];
         int max;
-        for (int k = 2 * i + 1;k < length;k = 2 * k + 1){
+        for (int k = 2 * i + 1;k < length;k ++){
             if(k + 1 < length && a[k] < a[k + 1]){
                max = k + 1;
             }else {
