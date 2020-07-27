@@ -7,7 +7,10 @@ DataX的参数配置由三部分组成，用户自定义json、core.json、程�
 core.container.job.id|local和单机都为-1，分布式时大于1，必填
 core.container.job.mode|运行模式，有两种：standalone，taskGroup，必填
 core.container.job.reportInterval|不清楚，状态汇报时间间隔，稍长，避免大量汇报，默认10000
+core.container.job.sleepInterval|不清楚
 core.container.taskGroup.channel|每个taskGroup中并发的最大数量，默认为5
+core.container.task.failOver.retryIntervalInMsec|task失败后休息最小时间，默认10000
+core.container.task.failOver.maxWaitInMsec|上次失败的task仍未结束，最大等待时长60000
 core.container.trace.enable|不清楚，应该是是否统计追踪JVM的，默认false
 core.dataXServer.address|
 core.dataXServer.timeout|
@@ -32,6 +35,7 @@ job.content[0].reader.parameter.password|数据库密码（又看到支持动态
 job.content[0].reader.parameter.splitPk|切分主键，支持数字和字符串（数字形式的字符串，程序中转化为了Long:待确认
 job.content[0].reader.parameter.column[*]|要读取的列名
 job.content[0].reader.parameter.isTableMode|判断reader是querySql语句模式还是表字段模式，true:表模式，false:querySql模式
+job.content[0].reader.parameter.loadBalanceResourceMark|用于插件对自身 split 的每个 task 标识其使用的资源，以告知core 对 reader/writer split 之后的 task 进行拼接时需要根据资源标签进行更有意义的 shuffle 操作
 job.content[0].writer.name|writer插件name，固定值，大小写要求
 job.content[0].writer.parameter.writeMode|写入模式，insert、replace、update，默认insert
 job.content[0].writer.parameter.connection[0].jdbcUrl|写入数据库url
@@ -40,8 +44,9 @@ job.content[0].writer.parameter.username|数据库用户名
 job.content[0].writer.parameter.password|数据库密码
 job.content[0].writer.parameter.preSql[0]|写入前预处理语句，比如清空写入表，sql
 job.content[0].writer.parameter.column[*]|写入列
+job.content[0].writer.parameter.loadBalanceResourceMark| 用于插件对自身 split 的每个 task 标识其使用的资源，以告知core 对 reader/writer split 之后的 task 进行拼接时需要根据资源标签进行更有意义的 shuffle 操作
 job.setting.errorLimit.percentage|job容忍的错误率，百分比，默认0.02
-job.setting.errorLimit.record|jon容忍错误率，条数，默认0，和百分比的哪个占主要，待确认
+job.setting.errorLimit.record|jon容忍错误率，条数，默认0，优先级高于percentage
 job.setting.speed.channel|并发通道数，并发task数
 job.setting.speed.byte|字节流控模式，所有通道字节流总和
 job.setting.speed.record|记录流模式，所有通道记录总和

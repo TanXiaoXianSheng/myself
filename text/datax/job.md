@@ -51,12 +51,20 @@ needChannelNumberByRecord = needChannelNumberByRecord > 0 ? needChannelNumberByR
          + 语句模式  
 切分份数= querySql.length
     1. writer切分
+        + 单表
+切分份数 = reader份数
+        + 多表
+1. transformer对象加载 (未开源)
+
+```
+DataX作为一个服务于大数据的ETL工具，除了提供数据快照搬迁功能之外，还提供了丰富数据转换的功能，让数据在传输过程中可以轻松完成数据脱敏，补全，过滤等数据转换功能，另外还提供了自动groovy函数，让用户自定义转换函数。详情请看DataX3的transformer详细介绍。
+```
 
 ## `this.schedule()`  
-1. aaa  
-aaaaa
-2. aaa
-1. aaa
+```
+schedule首先完成的工作是把上一步reader和writer split的结果整合到具体taskGroupContainer中,同时不同的执行模式调用不同的调度策略，将所有任务调度起来
+```
+schedule是核心，另起一篇[shedule篇章](./schedule.md)
 
 ## `this.post()`
 
