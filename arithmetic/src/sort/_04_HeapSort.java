@@ -22,21 +22,17 @@ public class _04_HeapSort {
 
     public static void adjust(int[] a,int i,int length){
         int temp = a[i];
-        int max;
-        for (int k = 2 * i + 1;k < length;k = 2 * k + 1){
-            if(k + 1 < length && a[k] < a[k + 1]){
-               max = k + 1;
-            }else {
-                max = k;
+        for (int k = 2 * i + 1; k < length; k = 2 * k + 1) {
+            if (k + 1 < length && a[k] < a[k + 1]) {
+                k++;
             }
-            if (temp < a[max]){
-                a[i] = a[max];
-                i = max;
-            }else {
+            if (a[k] > temp) {
+                SortUtil.swap(a, i, k);
+                i = k;
+            } else {
                 break;
             }
         }
-        a[i] = temp;
     }
 
     public static void main(String[] args){

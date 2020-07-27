@@ -1,7 +1,6 @@
 package tree.binary;
 
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @Description
@@ -84,7 +83,7 @@ public class BinaryTree {
         list.add(node.value);
     }
 
-    //逐层遍历
+    //层序遍历
     public List<Integer> layerTraversal(){
         List<Integer> list = new LinkedList<>();
         BinaryNode node = rootNode;
@@ -110,6 +109,30 @@ public class BinaryTree {
             if (node.right != null)
                 layerTraversal(node.right,level - 1,list);
         }
+    }
+
+    //层序遍历
+    private List<? extends Integer> layerTraversal02(BinaryNode node) {
+        Queue<BinaryNode> queue = new ArrayDeque<>();
+        List<Integer> list = new ArrayList<>();
+        if (node != null)
+            queue.add(node);
+        while (queue.size() > 0) {
+            BinaryNode tempNode = queue.poll();
+            list.add(tempNode.value);
+            if (tempNode.left != null)
+                queue.add(tempNode.left);
+            if (tempNode.right != null)
+                queue.add(tempNode.right);
+        }
+        return list;
+    }
+
+    private void layerTraversal02(BinaryNode node,Queue<? extends Integer> queue) {
+        if (node == null) {
+            return;
+        }
+
     }
 
     //二叉树反转
@@ -149,6 +172,13 @@ public class BinaryTree {
         }
     }
 
+    private int high(BinaryNode node){
+        if (node == null)
+            return 0;
+        else
+            return Math.max(1 + high(node.left),1 + high(node.right));
+    }
+
     //深度有限
 
     //广度优先
@@ -159,7 +189,10 @@ public class BinaryTree {
         System.out.println("先序遍历:" + binaryTree.preorderTraversal());
         System.out.println("中序遍历:" + binaryTree.inorderTraversal());
         System.out.println("后序遍历:" + binaryTree.postorderTraversal());
-        System.out.println("逐层遍历:" + binaryTree.layerTraversal());
+        System.out.println("层序遍历:" + binaryTree.layerTraversal());
+        System.out.println("层序遍历:" + binaryTree.layerTraversal02(binaryTree.rootNode));
+        System.out.println("深度计算:" + binaryTree.high(binaryTree.rootNode));
         binaryTree.reversal();
+
     }
 }
