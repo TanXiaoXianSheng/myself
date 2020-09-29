@@ -161,4 +161,4 @@ target/
 ./spark/.settings
 ./mybatis/.settings
 ./**/.idea
-./**/.settings
+*/.settings
