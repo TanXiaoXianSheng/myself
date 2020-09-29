@@ -1,9 +1,11 @@
+import java.io.Serializable;
+
 /**
  * @Description
  * @Auther: bichengfei
  * @Data: 2019/4/23 18:10
  **/
-public class User {
+public class User implements Serializable {
 
     private int id;
     private String username;

@@ -18,7 +18,7 @@ object App {
   }
 
   def second(): RDD[String] ={
-    sc.textFile("D:\\WorkSoft\\spark-2.4.3-bin-hadoop2.6\\spark-2.4.3-bin-hadoop2.6\\README.md")
+    sc.textFile("D:\\software\\worksoft\\spark-2.4.7-bin-hadoop2.7\\spark-2.4.7-bin-hadoop2.7\\spark-2.4.7-bin-hadoop2.7\\README.md")
   }
 
   def third(): Unit ={

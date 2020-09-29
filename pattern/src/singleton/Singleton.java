@@ -4,11 +4,10 @@ public class Singleton {
 
     Singleton test = null;
 
-    public Singleton getTest() throws Exception{
+    public Singleton getTest(){
         if (test == null){
             test = new Singleton();
         }
-        Thread.sleep(10000);
         return test;
     }
 
