@@ -162,3 +162,7 @@ target/
 ./mybatis/.settings
 ./**/.idea
 */.settings
+*/target
+*/.classpath
+*/.project
+*/*.iml
