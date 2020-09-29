@@ -157,7 +157,6 @@ local.properties
 .worksheet
 
 target/
-./idea
 ./spark/.idea
 ./spark/.settings
 ./mybatis/.settings
