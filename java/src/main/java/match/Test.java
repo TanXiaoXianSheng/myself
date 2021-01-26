@@ -1,7 +1,5 @@
 package match;
 
-import scala.Int;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -22,4 +20,5 @@ public class Test {
 
         Object obj = new Object();
     }
+
 }
