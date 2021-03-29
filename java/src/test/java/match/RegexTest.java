@@ -1,10 +1,12 @@
 package match;
 
+import com.alibaba.fastjson.JSON;
 import com.newbanker.framework.httpclient.HttpUtils;
 import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -57,5 +59,36 @@ public class RegexTest {
         map.put("var0","hahahahahaha");
 
         System.out.println(HttpUtils.doPost(url,map));
+    }
+
+    @Test
+    public void test006(){
+        Map<String,Object> map = new HashMap<>();
+        map.put("aaa","bbb");
+        map.put("obj","hahaha");
+        System.out.println(JSON.toJSONString(map));
+    }
+
+    @Test
+    public void test007(){
+        try {
+            int a = 7;
+            int b = 0;
+            int c = a/b;
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    @Test
+    public void test008() {
+        ConcurrentHashMap<String,String> cMap = new ConcurrentHashMap<>();
+        cMap.put("a","hahahaha");
+    }
+
+    @Test
+    public void test009(){
+        HashMap<String,String> map = new HashMap<>();
+        map.put("a","hahahah");
     }
 }
