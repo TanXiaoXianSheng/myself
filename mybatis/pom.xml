@@ -5,12 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.bcf.mybatis</groupId>
-    <artifactId>mybatis</artifactId>
+    <artifactId>parent</artifactId>
     <version>001</version>
     <packaging>pom</packaging>
 
     <modules>
+        <module>mybatis_000</module>
         <module>mybatis_001</module>
+        <module>mybatis_002</module>
     </modules>
 
     <properties>
@@ -22,6 +24,7 @@
         <junit.version>4.12</junit.version>
         <lombok.verson>RELEASE</lombok.verson>
         <fastjson.version>1.2.75</fastjson.version>
+        <log4j.version>1.2.17</log4j.version>
     </properties>
 
     <dependencyManagement>
@@ -57,6 +60,13 @@
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

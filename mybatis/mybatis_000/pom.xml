@@ -10,7 +10,8 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>001</artifactId>
+    <artifactId>mybatis_000</artifactId>
+
 
     <dependencies>
         <dependency>
@@ -39,6 +40,12 @@
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
         </dependency>
-    </dependencies>
 
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+
+
+    </dependencies>
 </project>
