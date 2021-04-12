@@ -4,6 +4,23 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper.PrdReservationMapper">
 
+    <!--
+    <where>
+            <choose>
+                <when test="query.statusList != null and query.statusList.size() > 0">
+                    and r.status in
+                    <foreach collection="query.statusList" item="item" open="(" separator="," close=")">
+                        #{item}
+                    </foreach>
+                </when>
+                <otherwise>
+                    <if test="query.status != null and query.status != 0">
+                        and r.status = #{query.status,jdbcType=NUMERIC}
+                    </if>
+                </otherwise>
+            </choose>
+        </where>
+    -->
     <select id="select" parameterType="entity.ReservationSearchQueryDto" resultType="map">
         select r.* from wbs_prd_reservation r
         <where>
@@ -20,6 +37,12 @@
                     </if>
                 </otherwise>
             </choose>
+            <if test="query.reservationNo != null and query.reservationNo != '' ">
+                and r.no = #{query.reservationNo,jdbcType=VARCHAR}
+            </if>
+            <if test="query.customerName != null and query.customerName != ''">
+                and r.customerName like CONCAT('%',#{query.customerName,jdbcType=VARCHAR},'%')
+            </if>
         </where>
     </select>
 

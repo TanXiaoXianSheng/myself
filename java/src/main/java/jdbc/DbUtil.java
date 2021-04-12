@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class DbUtil {
 
-    private final static String dbUrl = "jdbc:mysql://localhost:3307/db_test";
+    private final static String dbUrl = "jdbc:mysql://localhost:3306/mybatis";
     private final static String dbUsername = "root";
-    private final static String dbPassword = "1226";
+    private final static String dbPassword = "root";
     private final static String jdbcName = "com.mysql.jdbc.Driver";
 
     public static Connection getCon(){

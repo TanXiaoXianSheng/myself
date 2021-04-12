@@ -35,11 +35,15 @@ public class Mybatis000 {
     public void test001() throws IOException {
         PrdReservationMapper mapper = session.getMapper(PrdReservationMapper.class);
         ReservationSearchQueryDto dto = new ReservationSearchQueryDto();
-        dto.setStatus(0);
+        //dto.setStatus(0);
         List<Integer> statusList = new ArrayList<>();
         /*statusList.add(7);
         statusList.add(10);*/
+        statusList.add(0);
         dto.setStatusList(statusList);
+        //dto.setReservationNo("NPDC2099-202011180125101002104010007\n");
+        String str = "{\"customerName\":\"校长\",\"deleted\":1,\"entId\":2099,\"statusList\":[]}";
+        dto = JSON.parseObject(str, ReservationSearchQueryDto.class);
         List<Map<String, String>> map = mapper.select(dto);
         out.println(JSON.toJSONString(map));
     }
