@@ -1,3 +1,4 @@
+import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 import entity.UserEntity;
 import mapper.UserMapper;
 import org.apache.ibatis.io.Resources;
@@ -8,6 +9,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import javax.sql.DataSource;
 import java.io.IOException;
 import java.util.List;
 
@@ -32,5 +34,11 @@ public class Mybatis002 {
     public void test001() {
         List<UserEntity> userList = session.selectOne("mapper.UserMapper.selectAll");
         out.println(userList);
+    }
+
+    @Test
+    public void test002() {
+        DataSource ds = new MysqlDataSource();
+
     }
 }

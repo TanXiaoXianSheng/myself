@@ -91,4 +91,12 @@ public class RegexTest {
         HashMap<String,String> map = new HashMap<>();
         map.put("a","hahahah");
     }
+
+    @Test
+    public void test010() {
+        String str = "A1";
+        Boolean bool = str.matches("[a-zA-Z0-9]{2}");
+        System.out.println(bool);
+    }
+
 }

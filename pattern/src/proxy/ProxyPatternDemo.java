@@ -14,5 +14,13 @@ public class ProxyPatternDemo {
         System.out.println("");
         image.display();
 
+        Integer a = 1500;
+        Integer b = 1500;
+        System.out.println(a == b);
+
+        int c = 1500;
+        int d = 1500;
+        System.out.println(c == d);
+
     }
 }
