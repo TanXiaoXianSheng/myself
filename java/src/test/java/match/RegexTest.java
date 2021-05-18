@@ -94,8 +94,8 @@ public class RegexTest {
 
     @Test
     public void test010() {
-        String str = "A1";
-        Boolean bool = str.matches("[a-zA-Z0-9]{2}");
+        String str = "Aaa";
+        Boolean bool = str.matches("[a-zA-Z0-9]{1,2}");
         System.out.println(bool);
     }
 

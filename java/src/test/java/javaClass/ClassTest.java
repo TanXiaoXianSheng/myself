@@ -3,6 +3,8 @@ package javaClass;
 import org.junit.Test;
 
 import java.lang.reflect.Field;
+import java.rmi.Naming;
+import java.rmi.registry.Registry;
 
 /**
  * @Description：TODO
@@ -23,6 +25,9 @@ public class ClassTest {
         Class<T> userClass = (Class<T>) User.class;
         Class<?> superclass = userClass.getSuperclass();
         int a = 1;
+
+        Naming naming = null;
+        Registry registry;
     }
 
     @Test

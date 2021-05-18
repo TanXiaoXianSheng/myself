@@ -179,10 +179,6 @@ public class BinaryTree {
             return Math.max(1 + high(node.left),1 + high(node.right));
     }
 
-    //深度有限
-
-    //广度优先
-
     public static void main(String[] args){
         int a[] = {2,6,1,3,9,8,10,11,6,4,2};
         BinaryTree binaryTree = new BinaryTree(a);

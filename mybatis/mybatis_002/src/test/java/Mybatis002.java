@@ -38,7 +38,14 @@ public class Mybatis002 {
 
     @Test
     public void test002() {
-        DataSource ds = new MysqlDataSource();
+        UserEntity userList = session.selectOne("mapper.UserMapper.selectAll");
+        out.println(userList);
 
+    }
+
+    @Test
+    public void test003() {
+        UserMapper mapper = session.getMapper(UserMapper.class);
+        mapper.selectById(1);
     }
 }

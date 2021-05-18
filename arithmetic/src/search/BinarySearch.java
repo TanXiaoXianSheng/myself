@@ -1,7 +1,5 @@
 package search;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

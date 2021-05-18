@@ -11,19 +11,12 @@ public class LinkedNode {
 
     public LinkedNode next;
 
-    public int getValue() {
-        return value;
+    public LinkedNode front;
+
+    public LinkedNode() {
     }
 
-    public void setValue(int value) {
+    public LinkedNode(int value) {
         this.value = value;
-    }
-
-    public LinkedNode getNext() {
-        return next;
-    }
-
-    public void setNext(LinkedNode next) {
-        this.next = next;
     }
 }
