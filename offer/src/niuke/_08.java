@@ -1,5 +1,10 @@
 package niuke;
 
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+
 /**
  * @Description：TODO
  * @Author：bichengfei
@@ -7,10 +12,20 @@ package niuke;
  */
 public class _08 {
 
-    public int Sum_Solution(int n) {
-        int sum=n;
-        sum && (sum+=Sum_Solution(n-1));
-        return sum;
+    public List<String> topKFrequent(String[] words, int k) {
+        Map<String, Integer> map = new TreeMap<>() {
+
+            @Override
+            public Comparator<? super String> comparator() {
+                return super.comparator();
+            }
+            
+        }
+    }
+
+
+    public static void main(String[] args) {
+
     }
 
 }

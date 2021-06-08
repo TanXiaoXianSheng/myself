@@ -50,4 +50,40 @@
         select r.* from wbs_prd_reservation r
     </select>
 
+    <select id="selectCountByStatus" resultType="integer">
+        select count(*) from wbs_prd_reservation
+        <where>
+            <if test = "1 == 1">and deleted = 0</if>
+            <if test="statusList != null and statusList.size != 0">
+                and status in
+                <foreach collection="statusList" item="item" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+    <select id="selectByReserveId" parameterType="Object" resultType="entity.PrdResRepayEntity">
+        select
+            id,
+            reserveId,
+            periods,
+            repayAmount,
+            repayCapital,
+            startDate,
+            endDate,
+            createdBy,
+            createTime,
+            actualRepayDate,
+            repayNo,
+            status,
+            releaseStatus,
+            source
+        from
+        wbs_prd_res_repay
+        where
+        reserveId = #{reserveId,jdbcType=VARCHAR}
+        order by periods
+    </select>
+
 </mapper>

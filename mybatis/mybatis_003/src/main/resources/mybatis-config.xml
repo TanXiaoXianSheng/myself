@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    
+    <properties resource="datasource.properties">
+        <!--<property name="username" value="root"/>-->
+        <!--
+        <property name="org.apache.ibatis.parsing.PropertyParser.enable-default-value" value="ture"/> &lt;!&ndash; 启用默认值特征 &ndash;&gt;
+        <property name="org.apache.ibatis.parsing.PropertyParser.default-value-separator" value="?:"/> &lt;!&ndash; 修改默认值的分隔符 &ndash;&gt;
+        -->
+    </properties>
+
+    <typeHandlers>
+        <typeHandler handler="org.apache.ibatis.type.EnumTypeHandler" javaType="enums.SexEnum"/>
+        <typeHandler handler="org.apache.ibatis.type.EnumOrdinalTypeHandler" javaType="enums.SexEnum"/>
+    </typeHandlers>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis"/>
+                <property name="username" value="root"/>
+                <property name="password" value="root"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <mapper resource="mapper/userMapper.xml"/>
+    </mappers>
+</configuration>
