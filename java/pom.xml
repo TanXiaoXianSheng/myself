@@ -48,6 +48,12 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.atteo.classindex</groupId>
+            <artifactId>classindex</artifactId>
+            <version>3.4</version>
+        </dependency>
+
 
     </dependencies>
 

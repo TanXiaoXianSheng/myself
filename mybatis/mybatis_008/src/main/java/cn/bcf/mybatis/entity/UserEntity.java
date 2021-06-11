@@ -1,4 +1,4 @@
-package entity;
+package cn.bcf.mybatis.entity;
 
 import cn.bcf.mybatis.enums.SexEnum;
 import lombok.Data;

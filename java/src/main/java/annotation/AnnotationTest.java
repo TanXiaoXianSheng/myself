@@ -1,6 +1,10 @@
 package annotation;
 
+import org.atteo.classindex.ClassIndex;
+import org.atteo.classindex.IndexAnnotated;
+
 import java.lang.annotation.Annotation;
+import java.net.URL;
 
 /**
  * @Description：TODO
@@ -11,10 +15,7 @@ import java.lang.annotation.Annotation;
 public class AnnotationTest {
 
     public static void main(String[] args) {
-        Class clazz = SexEnum.class;
-        Annotation[] annotations = clazz.getAnnotations();
-        Annotation annotation = clazz.getAnnotation(Test.class);
-
+        Iterable<Class<?>> klasses = ClassIndex.getAnnotated(Test.class);
         int a = 1;
     }
 }

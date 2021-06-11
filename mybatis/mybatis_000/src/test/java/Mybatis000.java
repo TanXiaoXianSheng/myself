@@ -73,7 +73,7 @@ public class Mybatis000 {
         Integer count02 = mapper.selectCountByStatus(statusList02);
 
         List<Integer> statusList03 = new ArrayList<>();
-        statusList03.add(ReservationStatus.CONFIRMACCOUNT.key);
+        statusList03.add(ReservationStatus.GETACCOUNT.key);
         Integer count03 = mapper.selectCountByStatus(statusList03);
 
         List<Integer> statusList04 = new ArrayList<>();
