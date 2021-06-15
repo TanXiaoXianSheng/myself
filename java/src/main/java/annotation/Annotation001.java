@@ -12,10 +12,6 @@ import java.net.URL;
  * @Date：2021/6/7 6:46 下午
  */
 @Test
-public class AnnotationTest {
+public class Annotation001 {
 
-    public static void main(String[] args) {
-        Iterable<Class<?>> klasses = ClassIndex.getAnnotated(Test.class);
-        int a = 1;
-    }
 }
