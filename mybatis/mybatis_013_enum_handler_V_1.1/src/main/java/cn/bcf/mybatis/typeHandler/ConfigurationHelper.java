@@ -5,9 +5,6 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.type.TypeHandlerRegistry;
 import org.atteo.classindex.ClassIndex;
 
-import javax.annotation.processing.SupportedAnnotationTypes;
-import javax.annotation.processing.SupportedSourceVersion;
-import javax.lang.model.SourceVersion;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,6 +19,11 @@ public class ConfigurationHelper {
 
     private static final Class HANDLER_CLAZZ = EnumKeyTypeHandler.class;
 
+    /**
+     * 向 sqlSessionFactory 的类型处理器中，注入 EnumKeyTypeHandler
+     * @param factory
+     * @throws ClassNotFoundException
+     */
     public static void loadEnumHandler(SqlSessionFactory factory) throws ClassNotFoundException {
         System.out.println("loadEnumHandler");
         List<String> list = getJavaType();
