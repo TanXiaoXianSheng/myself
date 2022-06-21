@@ -20,7 +20,7 @@
         <maven.compiler.target>11</maven.compiler.target>
 
         <mybatis.version>3.5.0</mybatis.version>
-        <mysql.version>5.1.17</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
         <junit.version>4.12</junit.version>
         <lombok.verson>RELEASE</lombok.verson>
         <fastjson.version>1.2.75</fastjson.version>
